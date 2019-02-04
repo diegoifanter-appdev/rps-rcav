@@ -1,0 +1,68 @@
+
+
+<html>
+
+<body>
+
+  <div class="container mt-5 text-center">
+    <div class="row mb-3">
+      <div class="col-4"><a href="/rock" class="btn btn-outline-info btn-block">
+    <i class="far fa-hand-rock fa-fw"></i>
+   <span class="d-none d-sm-inline">Play Rock</span>
+  </a>
+      </div>
+      <div class="col-4"><a href="/paper" class="btn btn-info btn-block">
+    <i class="far fa-hand-paper fa-fw"></i>
+    <span class="d-none d-sm-inline">Play Paper</span>
+  </a>
+      </div>
+      <div class="col-4"><a href="/scissors" class="btn btn-outline-info btn-block">
+    <i class="far fa-hand-scissors fa-fw"></i>
+    <span class="d-none d-sm-inline">Play Scissors</span>
+  </a></div>
+    </div>
+    
+
+
+    <div class="row ">
+      <div class="col-md-6">
+        <div class="card border-success mb-3">
+          <div class="card-body text-success">
+            <h2 class="card-title">We played paper!</h5>
+              <p class="card-text">
+                <i class="far fa-hand-paper fa-10x"></i>
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-danger mb-3">
+          <div class="card-body text-danger">
+            <h2 class="card-title">They played <%= @comp_move%>!</h5>
+              <p class="card-text">
+                <i class="<%= @image %>"></i>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="alert <%= @color %>" role="alert">
+          <h2 class="display-3">We <%=@outcome%>!</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row  mb-3">
+      <div class="col-md-12"> <a href="/">
+    Rules
+  </a></div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
